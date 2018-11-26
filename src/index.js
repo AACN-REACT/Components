@@ -15,7 +15,7 @@ let myNodeList = document.querySelectorAll('div[id^="form"]')
     ReactDOM.render(<AacnForm num={parseInt(myNodeList[i].dataset.config)}  />, myNodeList[i])
   }
 
-  myNodeList.forEach(el=>ReactDOM.render(<AacnForm />,el))
+  myNodeList.forEach(el=>ReactDOM.render(<AacnForm num={parseInt(el.dataset.config)} />,el))
 console.log(window.globalVar)
 //myNodeList.filter((el,i)=>{/^form/.test(el.id)}).forEach(el=>el.innerHTML="form")
 

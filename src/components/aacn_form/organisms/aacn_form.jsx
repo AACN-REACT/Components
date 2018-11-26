@@ -8,7 +8,7 @@ class AacnForm extends Component {
         this.renderForm = this.renderForm.bind(this)
     }
     renderForm(){
-        let id=0
+        let id=0;
         let tot= [];
         let num = this.props.num;
         console.log(num)
