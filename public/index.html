@@ -9,9 +9,10 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <style>div{width:300px;height:200px;background:gray}</style>
+  
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -29,24 +30,19 @@
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <div id="form-left" data-config="2"></div>
-    <br>
+    <div id="form-left" data-config='{
+    "type":"custom",
+    "fields": [{"field":"firstname", "type":"text", "size":"10","focus":"false","validate":"1","label":"name","placeholder":"first name"},
+             {"field":"surname", "type":"text", "size":"10","focus":"false","validate":"1","label":"name","placeholder":"surname"},
+             {"field":"city", "type":"text", "size":"10","focus":"false","validate":"1","label":"City","placeholder":"city"}],
+    "endpoint": "https://jsonplaceholder.typicode.com/posts",
+    "css": "material"
+}'></div>
+    <div id="form-right" data-config="2"></div>
     <hr>
-    <div id="form-right" data-config="5"></div>
-    <br>
-    <hr>
-    <div id="left" data-config="3"></div>
-    <br>
-    <hr>
-    <div id="form-high" data-config="3"></div>
-    <br>
-    <hr>
-    <div id="right" data-config="2"></div>
-    <br>
-    <hr>
-    <div id="form-low" data-config="5"></div>
-    <br>
-    <hr>
+    <div id="form-3" data-config="1"></div>
+    <div id="form-4" data-config="1"></div>
+  
 
     <!--
       This HTML file is a template.
