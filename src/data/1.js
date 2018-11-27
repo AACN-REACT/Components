@@ -9,7 +9,7 @@ var myformConfig = {
 
             ],
     endpoint: "https://jsonplaceholder.typicode.com/posts",
-    css: "material"
+    styling: "material"
 }
 
 module.exports = myformConfig

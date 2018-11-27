@@ -15,10 +15,10 @@ let myNodeList = document.querySelectorAll('div[id^="form"]')
 // Must not use 'for..of' since it breaks ie11
   for(let i =0;i<myNodeList.length;i++){
    //JSON.parse(myNodeList[i].dataset.config)
-    ReactDOM.render(<AacnForm config={myNodeList[i].dataset.config[0]!='{'?require(`./data/${myNodeList[i].dataset.config}.js`):JSON.parse(myNodeList[i].dataset.config)} />, myNodeList[i])
+    ReactDOM.render(<AacnForm  config={myNodeList[i].dataset.config[0]!=='{'?require(`./data/${myNodeList[i].dataset.config}.js`):JSON.parse(myNodeList[i].dataset.config)} />, myNodeList[i])
   }
 
-  myNodeList.forEach(el=>ReactDOM.render(<AacnForm config={el.dataset.config[0]!='{'?require(`./data/${el.dataset.config}.js`):JSON.parse(el.dataset.config)} />,el))
+  myNodeList.forEach(el=>ReactDOM.render(<AacnForm config={el.dataset.config[0]!=='{'?require(`./data/${el.dataset.config}.js`):JSON.parse(el.dataset.config)} />,el))
 console.log(window.globalVar)
 //myNodeList.filter((el,i)=>{/^form/.test(el.id)}).forEach(el=>el.innerHTML="form")
 
