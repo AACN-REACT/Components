@@ -9,6 +9,9 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -30,7 +33,7 @@
       You need to enable JavaScript to run this app.
     </noscript>
 
-    <div id="form-left" data-config='{
+    <div style="width:200px; border:5px solid red" id="form-left" data-config='{
     "type":"custom",
     "fields": [{"field":"firstname", "type":"text", "size":"10","focus":"false","validate":"1","label":"name","placeholder":"first name"},
              {"field":"surname", "type":"text", "size":"10","focus":"false","validate":"1","label":"name","placeholder":"surname"},
@@ -38,10 +41,10 @@
     "endpoint": "https://jsonplaceholder.typicode.com/posts",
     "css": "material"
 }'></div>
-    <div id="form-right" data-config="2"></div>
+    <div style="width:500px; border:5px solid blue" id="form-right" data-config="2"></div>
     <hr>
-    <div id="form-3" data-styling="bootstrap" data-config="1"></div>
-    <div id="form-4" data-config="1"></div>
+    <div style="width:100vw; border:5px solid green" id="form-3" data-styling="bootstrap" data-config="1"></div>
+    <div  style="width:150px; border:5px solid coral" id="form-4" data-config="1"></div>
   
 
     <!--
