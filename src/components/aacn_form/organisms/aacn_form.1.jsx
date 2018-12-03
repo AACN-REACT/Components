@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Button, Form,  FormControl , ControlLabel, Jumbotron, FormGroup} from 'react-bootstrap';
-import {default  as Butt} from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
+import {Button as Butt, Input as FC, } from '@material-ui/core';
+
 
 // this is to generate a GUID for various uses such as provide form content with a  unique identifier 
 // NB the GUID utilises Javascript random function which is not ideal, adequate for our purposes
@@ -55,27 +55,28 @@ function AacnForm(props) {
             </ControlLabel>
             <ControlLabel htmlFor="secondname" >Second name
       
-            <FormControl type="text" maxLength="30" name="secondname" required />
+            <FC type="text" maxLength="30" name="secondname" required />
             </ControlLabel>
             <ControlLabel type="text" maxLength="30" name="line1" required />
             <ControlLabel htmlFor="address" >Address
-            <FormControl type="text" maxLength="30" name="line1" required />
-            <FormControl type="text" maxLength="30" name="line2" required />
+            <FC type="text" maxLength="30" name="line1" required />
+            <FC type="text" maxLength="30" name="line2" required />
             </ControlLabel>
-            <Button bsStyle="primary">Submit</Button>
-            <Button>Cancel</Button>
+            <Butt classes="primary">Submit</Butt>
+            <Butt color="primary" >Cancel</Butt >
             </Form>
             </div>
              )
     // validate props, first check if there is a config object
     if(!props.config) {
         console.log("No conifg detecting, rendering default form")
+    //return genericBootstrapForm
     return genericBootstrapForm
-    }
+}
 
 
-
-         return genericBootstrapForm
+//return genericBootstrapForm
+return genericBootstrapForm
 
 
  
