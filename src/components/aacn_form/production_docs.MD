@@ -19,11 +19,13 @@ _An easy to use react component for generating forms_
 
 ## Break Down of Code
 
-### How does thhe form inject into the HTML?
+### How does the form inject into the HTML?
 
 Div tags act as containers for the form, they should be assigned an id that begins with the word 'form' , this is how javascript finds them 
 The divs are the containers of the form and your styling should start with them.
- One useful style to pass to the containing div would be the width property, the attached form will automatically be the width of the div.
+
+
+ One useful style to pass to the containing div would be the width property, the attached form will automatically fill the width of the div.
 aacnform, in the index file will iterate of the div nodes searching for ones with the word form at the beginning of their id. It will then take the string past down 
 their data-conifg attribute and use that as the name of the file that it will search for  
 

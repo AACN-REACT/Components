@@ -18,7 +18,7 @@ function AacnForm(props) {
 
     //creating a state object to be passed down to generated class component and used as inital state
 
-    getFormStyle(myStyle){
+    function getFormStyle(myStyle){
         //this function will ascertain the chosen styling then import and generate the correct components to pass down to the form
         // the signature fo this funciton wil be determined by the schema of the config object. not sure yet what form it is going to take 
         switch ( typeof myStyle){
@@ -27,11 +27,11 @@ function AacnForm(props) {
             break;
             case "object":
             // import statement 
-            case 
+            break;
 
         }
     }
-    let state = {Uid:guidGenerator();formStyle:getFormStyle()}
+    let state = {Uid:guidGenerator(),formStyle:getFormStyle()}
 
 
 
@@ -92,7 +92,7 @@ function AacnForm(props) {
 
 
 //return genericBootstrapForm
-return genericBootstrapForm
+return genericMaterialForm
 
 
  

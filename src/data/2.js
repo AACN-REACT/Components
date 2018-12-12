@@ -11,7 +11,7 @@ var myformConfig = {
             ],
     buttons: [ {name:"cancel"}, {name:"submit"}],
     endpoint: "https://jsonplaceholder.typicode.com/posts",
-    css: "material"
+    styling: "material"
 }
 
 module.exports = myformConfig
