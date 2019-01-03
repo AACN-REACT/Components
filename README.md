@@ -4,6 +4,6 @@
 # AACN COMPONENT LIBRARY 
 
 
-## GIT REPO
+### GIT REPO
 
- You can find this library on github 
+ You can find this library on github: https://github.com/AACN-REACT/Components
