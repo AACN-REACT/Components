@@ -6,7 +6,7 @@
 
 # testing
 /coverage
-
+.bv
 # production
 /build
 .vs
